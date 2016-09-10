@@ -3,12 +3,82 @@ body {
 	color: #333;
 }
 
+div {
+	box-sizing: border-box;
+}
+
+p {
+	margin-top: 15px;
+	font-size: 17px;
+	line-height: 25px;
+	word-wrap: break-word;
+	width: 570px;
+}
+
 .fixed {
 	position: fixed;
-	height: 45px;
+	height: 48px;
 	left: 28px;
 	right: 0;
 	border: 1px solid #e2e2e2;
+	background-color: #fff;
+	z-index: 9;
+}
+
+.nav-left {
+	margin-top: 10px;
+	float: left;
+}
+
+.nav-left div {
+	height: 30px;
+	margin-right: -5px;
+	box-sizing: border-box;
+	font-size: 11px;
+	font-weight: 900;
+	padding: 6px;
+	float: left;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.home {
+	width: 75px;
+}
+
+.search {
+	width: 85px;
+}
+span {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.sections {
+	height: 30px;
+	width: 104px;
+	border: 1px solid #e2e2e2;
+	margin-left: -10px;
+	background-color: #fff;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+}
+
+.nav-left div:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+
+.home, .search {
+	margin-left: 20px; 
+}
+
+.mg {
+	width: 13px;
+	margin-bottom: -3px;
+}
+
+.ng {
+	margin-bottom: -4px;
 }
 
 .nav-middle {
@@ -23,5 +93,123 @@ body {
 }
 
 .nav-right {
+	color: #fff;
+	margin-top: -30px;
+	float: right;
+	width: 260px;
+}
+
+.gear {
+	margin-top: 5px;
+	width: 18px;
+}
+
+.subs, .login {
+	box-sizing: border-box;
+	font-size: 12px;
+	height: 30px;
+	font-weight: 700;
+	border: 1px solid #4d7b9f;
+	background-color: #6288a5;
+	margin-right: 15px;
+	padding: 8px;
+	border-radius: 3px;
+	letter-spacing: -0.5px;
+}
+
+.subs:hover, .login:hover {
+	cursor: pointer;
+	background-color: #326891;
+}
+
+.subs, .login, .settings {
+	float: left;
+}
+
+.settings {
+	height: 30px;
+	width: 30px;
+	padding-left: 5px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	margin-left: -7px;
+}
+
+.settings:hover {
+	background-color: gray;
+}
+
+.no-fixed {
+	position: relative;
+	height: 83px;
+	top: 48px;
+	left: 28px;
+	right: 0;
+	border: 1px solid #e2e2e2;
+	border-top: 0;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+}
+
+.main {
+	position: relative;
+	top: 48px;
+	left: 28px;
+	right: 0;
+	border: 1px solid #e2e2e2;
+	border-top: 0;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+	padding: 130px;
+}
+
+.cosmos {
+	width: 1125px;
+	height: 633;
+}
+
+.first, .second, .theory, .video {
+	margin-top: 40px;
+	margin-left: -75px;
+}
+
+.bicep-pic {
+	width: 645px;
+	height: 431px;
+}
+
+.first figcaption, .second figcaption {
+	width: 645px;
+}
+
+.theory-pic {
+	width: 945px;
+	height: 576px;
+}
+
+.article-header {
+	margin-left: -75px;
+	border-top: 1px solid #111;
+}
+
+.topic {
+	margin-top: 2px;
+}
+
+.topic a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 900;
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 900;
+	font-style: italic;
+	margin: 30px 0 10px 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid gray;
+}
+
+.social {
 	float: right;
 }
