@@ -1,3 +1,7 @@
+html {
+	position: relative;
+}
+
 body {
 	font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
 	color: #333;
@@ -18,16 +22,35 @@ p {
 .fixed {
 	position: fixed;
 	height: 48px;
-	left: 28px;
+	left: 30px;
 	right: 0;
 	border: 1px solid #e2e2e2;
+	border-left: 0;
 	background-color: #fff;
 	z-index: 9;
+}
+
+footer {
+	box-sizing: border-box;
+	position: relative;
+	bottom: 0;
+	left: 30px;
+	right: 0;
+	padding: 100px;
 }
 
 .nav-left {
 	margin-top: 10px;
 	float: left;
+}
+
+.side {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	box-shadow: inset -4px 0 4px 0 rgba(25,25,25,0.04);
 }
 
 .nav-left div {
@@ -36,9 +59,8 @@ p {
 	box-sizing: border-box;
 	font-size: 11px;
 	font-weight: 900;
-	padding: 6px;
+	padding: 8px;
 	float: left;
-	border: 1px solid transparent;
 	border-radius: 3px;
 }
 
@@ -58,14 +80,14 @@ span {
 	height: 30px;
 	width: 104px;
 	border: 1px solid #e2e2e2;
-	margin-left: -10px;
+	margin-left: -12px;
 	background-color: #fff;
 	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
 }
 
 .nav-left div:hover {
 	cursor: pointer;
-	background-color: gray;
+	background-color: #f4f5f2;
 }
 
 .home, .search {
@@ -136,34 +158,113 @@ span {
 }
 
 .settings:hover {
-	background-color: gray;
+	background-color: #f4f5f2;
 }
 
 .no-fixed {
+	box-sizing: border-box;
 	position: relative;
 	height: 83px;
 	top: 48px;
-	left: 28px;
+	left: 30px;
 	right: 0;
 	border: 1px solid #e2e2e2;
+	padding: 5px;
 	border-top: 0;
+	border-left: 0;
 	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+}
+
+.news {
+	display: inline-block;
+	width: 240px;
+	height: 75px;
+	border-right: 1px solid #e2e2e2;
+}
+
+.num {
+	display: inline-block;
+	width: 15px;
+}
+
+.newspic {
+	display: inline-block;
+	width: 60px;
+	margin: 7px;
+}
+
+.newstext {
+	box-sizing: border-box;
+	border: 1px solid red;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	word-wrap: break-word;
+	width: 130px;
+	height: 55px;
 }
 
 .main {
 	position: relative;
 	top: 48px;
-	left: 28px;
+	left: 30px;
 	right: 0;
 	border: 1px solid #e2e2e2;
 	border-top: 0;
-	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+	border-left: 0;
 	padding: 130px;
+}
+
+.twit, .face, .email, .arrow, .ribbon {
+	display: inline-block;
+	margin-left: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.face {
+	background-image: url(../img/facebook.svg);
+}
+
+.face:hover {
+	background-image: url(../img/facebook_blue.svg);
+}
+
+.twit {
+	background-image: url(../img/twitter.svg);
+}
+
+.twit:hover {
+	background-image: url(../img/twitter_blue.svg);
+}
+
+.email {
+	background-image: url(../img/email.svg);
+}
+
+.email:hover {
+	background-image: url(../img/email_gray.svg);
+}
+
+.arrow {
+	background-image: url(../img/arrow.svg);
+}
+
+.arrow:hover {
+	background-image: url(../img/arrow_gray.svg);
+}
+
+.ribbon {
+	background-image: url(../img/ribbon_white.svg);
+}
+
+.ribbon:hover {
+	background-image: url(../img/ribbon_gray.svg);
 }
 
 .cosmos {
 	width: 1125px;
-	height: 633;
+	height: 633px;
 }
 
 .first, .second, .theory, .video {
@@ -176,8 +277,21 @@ span {
 	height: 431px;
 }
 
-.first figcaption, .second figcaption {
+figcaption {
+	margin-top: 7px;
+	line-height: 1.1;
+	font-size: 15px;
+	color: #666;
 	width: 645px;
+}
+
+figcaption span {
+	font-size: 12px;
+	color: #999;
+}
+
+article {
+	margin-top: 50px;
 }
 
 .theory-pic {
@@ -186,6 +300,7 @@ span {
 }
 
 .article-header {
+	width: 1125px;
 	margin-left: -75px;
 	border-top: 1px solid #111;
 }
@@ -197,19 +312,37 @@ span {
 .topic a {
 	text-decoration: none;
 	color: inherit;
-	font-weight: 900;
-	font-size: 15px;
+	font-weight: bold;
+	font-size: 13px;
 }
 
 h1 {
+	width: 1125px;
 	font-size: 35px;
 	font-weight: 900;
 	font-style: italic;
 	margin: 30px 0 10px 0;
 	padding-bottom: 15px;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 .social {
 	float: right;
+}
+
+.adv {
+	width: 728px;
+	margin: auto;
+	margin-top: -115px;
+	margin-bottom: 13px;
+}
+
+.body {
+	color: #326891;
+}
+
+.container div {
+	float: left;
+	width: 200px;
+	border-left: 1px solid gray;
 }
