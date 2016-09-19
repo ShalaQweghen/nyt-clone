@@ -5,10 +5,28 @@ html {
 body {
 	font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
 	color: #333;
+	overflow-x: hidden;
 }
 
 div {
 	box-sizing: border-box;
+}
+
+figcaption {
+	margin-top: 7px;
+	line-height: 1.1;
+	font-size: 15px;
+	color: #666;
+	width: 645px;
+}
+
+figcaption span {
+	font-size: 12px;
+	color: #999;
+}
+
+article {
+	margin-top: 50px;
 }
 
 p {
@@ -17,6 +35,26 @@ p {
 	line-height: 25px;
 	word-wrap: break-word;
 	width: 570px;
+}
+
+span {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+h1 {
+	width: 1125px;
+	font-size: 35px;
+	font-weight: 900;
+	font-style: italic;
+	margin: 30px 0 10px 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+h6 {
+	font-weight: bold;
+	font-size: 13.5px;
 }
 
 .fixed {
@@ -28,15 +66,6 @@ p {
 	border-left: 0;
 	background-color: #fff;
 	z-index: 9;
-}
-
-footer {
-	box-sizing: border-box;
-	position: relative;
-	bottom: 0;
-	left: 30px;
-	right: 0;
-	padding: 100px;
 }
 
 .nav-left {
@@ -70,10 +99,6 @@ footer {
 
 .search {
 	width: 85px;
-}
-span {
-	display: inline-block;
-	padding-left: 5px;
 }
 
 .sections {
@@ -167,7 +192,6 @@ span {
 	height: 83px;
 	top: 48px;
 	left: 30px;
-	right: 0;
 	border: 1px solid #e2e2e2;
 	padding: 5px;
 	border-top: 0;
@@ -175,16 +199,27 @@ span {
 	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
 }
 
+.no-fixed a {
+	color: #000;
+}
+
+.no-fixed a:hover {
+	text-decoration: underline;
+}
+
 .news {
 	display: inline-block;
-	width: 240px;
+	width: 245px;
 	height: 75px;
 	border-right: 1px solid #e2e2e2;
 }
 
 .num {
 	display: inline-block;
-	width: 15px;
+	font-size: 24px;
+	width: 18px;
+	margin-top: 3px;
+	vertical-align: top;
 }
 
 .newspic {
@@ -195,29 +230,120 @@ span {
 
 .newstext {
 	box-sizing: border-box;
-	border: 1px solid red;
+	margin-top: 3px;
 	display: inline-block;
 	font-size: 14px;
 	line-height: 1;
 	word-wrap: break-word;
 	width: 130px;
-	height: 55px;
+	vertical-align: top;
+}
+
+.right {
+	position: fixed;
+	width: 35px;
+	height: 75px;
+	top: 45%;
+	right: 0;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #e2e2e2;
+	border-right: none;
+	padding: 15px 0;
+	background: #f4f5f2 url("../img/arrow-gray.svg") no-repeat center;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.right:hover {
+	background: #f4f5f2 url("../img/arrow-black.svg") no-repeat center;
+	width: 200px;
+}
+
+.comments {
+	position: absolute;
+	width: 360px;
+	height: 300px;
+	right: 70px;
+	top: 20%;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	padding-top: 10px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.recent {
+	color: #326891;
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: 10px;
+}
+
+.speech {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.comments p {
+	margin-top: 0;
+}
+
+.comment {
+	margin-top: 10px;
+}
+
+.name {
+	padding-left: 0;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.date {
+	font-size: 12px;
+	color: #999;
+}
+
+.main-comment {
+	margin-top: 0;
+	font-size: 14px;
+	color: #666;
+	width: 360px;
+	line-height: 15px;
 }
 
 .main {
+	box-sizing: border-box;
 	position: relative;
 	top: 48px;
 	left: 30px;
 	right: 0;
-	border: 1px solid #e2e2e2;
-	border-top: 0;
-	border-left: 0;
-	padding: 130px;
+	padding: 130px 130px 50px 130px;
+}
+
+.credit {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #000;
+}
+
+.credit span {
+	font-weight: bold;
+}
+.credit a {
+	color: #000;
+	text-decoration: none;
+}
+
+.credit a:hover {
+	text-decoration: underline;
 }
 
 .twit, .face, .email, .arrow, .ribbon {
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 13px;
 	width: 25px;
 	height: 25px;
 }
@@ -263,6 +389,7 @@ span {
 }
 
 .cosmos {
+	margin-top: -15px;
 	width: 1125px;
 	height: 633px;
 }
@@ -277,21 +404,17 @@ span {
 	height: 431px;
 }
 
-figcaption {
-	margin-top: 7px;
-	line-height: 1.1;
-	font-size: 15px;
-	color: #666;
-	width: 645px;
+.theory {
+	position: relative;
+	width: 945px;
+	padding-top: 15px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
 }
 
-figcaption span {
-	font-size: 12px;
-	color: #999;
-}
-
-article {
-	margin-top: 50px;
+.theory h3 {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .theory-pic {
@@ -316,16 +439,6 @@ article {
 	font-size: 13px;
 }
 
-h1 {
-	width: 1125px;
-	font-size: 35px;
-	font-weight: 900;
-	font-style: italic;
-	margin: 30px 0 10px 0;
-	padding-bottom: 15px;
-	border-bottom: 1px solid #e2e2e2;
-}
-
 .social {
 	float: right;
 }
@@ -341,8 +454,261 @@ h1 {
 	color: #326891;
 }
 
+footer {
+	clear: both;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 30px;
+	left: 30px;
+	right: 0;
+	height: 410px;
+	padding: 10px 90px;
+	color: #111;
+	border-top: 3px double #e2e2e2;
+}
+
+.container {
+	margin-top: 30px;
+}
+
 .container div {
 	float: left;
+	width: 170px;
+	height: 327px;
+	font-size: 14px;
+}
+
+.list li {
+	margin-top: 10px;
+}
+
+.list li a, .up li a, .middle li a, .down li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.right-side {
+	float: right;
 	width: 200px;
-	border-left: 1px solid gray;
+	height: 327px;
+	border-left: 1px solid #e2e2e2;
+	padding-left: 10px;
+}
+
+.up li {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.middle {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.middle li, .down li {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.down {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #e2e2e2;
+}
+
+.bottom {
+	position: relative;
+	bottom: 0;
+	right: 0;
+	left: 30px;
+	height: 30px;
+	font-size: 12px;
+	padding: 8px 90px 20px 90px;
+	border-top: 1px solid #e2e2e2;
+}
+
+.left-list {
+	float: left;
+}
+
+.left-list li a, .right-list li a{
+	text-decoration: none;
+	color: #999;
+}
+
+.right-list {
+	float: right;
+}
+
+.left-list li, .right-list li {
+	display: inline-block;
+	padding: 0 5px;
+	border-right: 1px solid #e2e2e2;
+}
+
+.left-list li:last-child, .right-list li:last-child {
+	border: 0;
+}
+
+.theory p {
+	margin-top: 7px;
+	width: 945px;
+	line-height: 1.1;
+	font-size: 15px;
+	color: #666;
+}
+
+.summary-container {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	width: 1200px;
+	height: 400px;
+}
+
+.summary-top, .summary-bottom {
+	display: inline-block;
+	width: 200px;;
+	margin-right: 40px;
+}
+
+.summary-top {
+	margin-top: 220px;
+}
+
+.summary-bottom {
+	margin-top: 145px;
+}
+
+.summary-top p span, .summary-bottom p span {
+	padding: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.summary-top p, .summary-bottom p {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 0;
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	width: 230px;
+	color: #000;
+}
+
+.summary-credit {
+	padding-left: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #999;
+	font-size: 12px;
+}
+
+.more-trending {
+	margin-top: 50px;
+}
+
+.more {
+	float: left;
+	width: 705px;
+	height: 530px;
+	margin-left: 80px;
+	border-top: 1px solid #e2e2e2;
+	padding-top: 10px;
+}
+
+.more-detail {
+	float: left;
+	width: 210px;
+	height: 218px;
+	margin-right: 35px;
+}
+
+.more-detail:nth-of-type(3n+0) {
+	margin-right: 0;
+}
+
+.more-container {
+	margin-top: 10px;
+}
+
+.more img {
+	width: 210px;
+	height: 140px;
+}
+
+.more h2 {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.more h3 {
+	width: 210px;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.more a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.more a:hover, .next:hover {
+	text-decoration: underline;
+}
+
+.next {
+	text-decoration: none;
+	color: #6288a5;
+	float: right;
+	font-size: 12px;
+}
+
+small {
+	display: inline-block;
+	font-size: 12px;
+	width: 570px;
+	margin-top: 5px;
+	color: #999;
+}
+
+small a {
+	text-decoration: none;
+	padding: 0 3px;
+	border-right: 1px solid #999;
+	color: inherit;
+}
+
+small a:last-child {
+	border-right: 0;
+}
+
+small a:hover {
+	text-decoration: underline;
+}
+
+.trending {
+	width: 360px;
+	float: right;
+	margin-right: 70px;
+}
+
+.trending ol li {
+	padding: 10px 0;
+	width: 330px;
+	font-size: 15px;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.trending ol li a {
+	color: #326891;
+	text-decoration: none;
+}
+
+.trending img {
+	margin-top: -10px;
+	float: right;
 }
