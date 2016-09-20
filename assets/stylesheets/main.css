@@ -354,6 +354,20 @@ h6 {
 	text-decoration: underline;
 }
 
+.social {
+	float: right;
+	margin-top: 5px;
+}
+
+.bubble {
+	background-image: url("../img/bubble.png");
+	float: right;
+	width: 40px;
+	height: 29px;
+	margin-left: 9px;
+	display: inline-block;
+}
+
 .twit, .face, .email, .arrow, .ribbon {
 	display: inline-block;
 	margin-left: 13px;
@@ -387,6 +401,7 @@ h6 {
 
 .arrow {
 	background-image: url(../img/arrow.svg);
+	
 }
 
 .arrow:hover {
@@ -394,7 +409,7 @@ h6 {
 }
 
 .ribbon {
-	background-image: url(../img/ribbon_white.svg);
+	background-image: url(../img/ribbon_white.svg); 
 }
 
 .ribbon:hover {
@@ -450,10 +465,6 @@ h6 {
 	color: inherit;
 	font-weight: bold;
 	font-size: 13px;
-}
-
-.social {
-	float: right;
 }
 
 .adv {
