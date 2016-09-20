@@ -1,1 +1,1 @@
-# nyt-clone
+## The New York Times clone [project](http://www.theodinproject.com/html5-and-css3/positioning-and-floating-elements) for [The Odin Project](http://www.theodinproject.com/home). For the original web site for the clone, click [here](http://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=3).
